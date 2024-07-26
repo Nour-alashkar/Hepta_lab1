@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Mukta Mahee', sans-serif;
+}
+
+header .home {
+  background: url("Assets/hero_1.jpg") no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .home-caption {
+  text-align: center;
+  color: #fff;
+}
+
+header .home-caption h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 3rem;
+}
+
+header .home-caption p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+header .home-caption button {
+  padding: 0.5rem 1rem;
+  background-color: #f8b400;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.sec-1, .sec-2, .sec-3, .sec-4, .sec-5 {
+  padding: 4rem 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-img {
+  width: 50%;
+  float: left;
+}
+
+.section-img img {
+  width: 100%;
+  display: block;
+}
+
+.section-caption {
+  width: 50%;
+  float: right;
+  padding: 1rem;
+}
+
+.sec-2 .experiance-caption, .sec-3 .caption, .sec-4 .caption, .sec-5 .caption {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sec-2 .features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sec-2 .feature {
+  width: 32%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sec-2 .feature img {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+.sec-3 .items, .sec-4 .items, .sec-5 .itemsImgs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sec-3 .item, .sec-4 .item, .sec-5 .itemImg {
+  width: 32%;
+  margin-bottom: 2rem;
+}
+
+.sec-3 .item img, .sec-4 .item img, .sec-5 .itemImg img {
+  width: 100%;
+  display: block;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .section-img, .section-caption, .sec-2 .feature, .sec-3 .item, .sec-4 .item, .sec-5 .itemImg {
+      width: 100%;
+      float: none;
+  }
+
+  .sec-2 .features, .sec-3 .items, .sec-4 .items, .sec-5 .itemsImgs {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  header .home-caption h1 {
+      font-size: 2rem;
+  }
+
+  header .home-caption p, header .home-caption button {
+      font-size: 1rem;
+  }
+
+  .container {
+      width: 95%;
+  }
+}
